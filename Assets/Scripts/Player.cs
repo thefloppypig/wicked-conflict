@@ -3,29 +3,28 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Player : MonoBehaviour
+public class Player : Character
 {
-    public float moveSpeed = 6;
-    public float jumpForce = 5;
+    public float reload;
 
-    private Rigidbody2D body;
-    private Animator animate;
-    private SpriteRenderer sprite;
+    protected float lastStepTime = 0;
+    protected float lastShootTime = 0;
+
     // Start is called before the first frame update
-    void Start()
+    protected new void Start()
     {
-        body = GetComponent<Rigidbody2D>();
-        animate = GetComponent<Animator>();
-        sprite = GetComponent<SpriteRenderer>();
+        base.Start();
+        canMove = true;
+        groundDistance = 1.5f;
     }
 
     void Update()
     {
-        if (Input.GetKeyDown("w"))
+        if (Input.GetKeyDown("space"))
         {
             Jump();
         }
-        if (Input.GetKey("space"))
+        if (Input.GetMouseButton(0))
         {
             Shoot();
         }
@@ -34,15 +33,22 @@ public class Player : MonoBehaviour
 
     private void Shoot()
     {
-        animate.SetBool("Shooting", true);
+        if (Time.time > lastShootTime + reload)
+        {
+            lastShootTime = Time.time;
+            animate.SetBool("Shooting", true);
+            Game.inst.SoundShoot();
+        }
+        
     }
 
     void FixedUpdate()
     {
-        Move();
+        PlayerMove();
+        IsGrounded();
     }
 
-    private void Move()
+    private void PlayerMove()
     {
         bool left = Input.GetKey("d");
         bool right = Input.GetKey("a");
@@ -65,25 +71,15 @@ public class Player : MonoBehaviour
             animate.SetBool("Running", true);
             sprite.flipX = false;
         }
-    }
 
-    private void Idle()
-    {
-        body.velocity = new Vector2(0, body.velocity.y);
     }
-
-    private void MoveRight()
+    protected new void Jump()
     {
-        body.velocity = new Vector2(moveSpeed,body.velocity.y);
-    }
-
-    private void MoveLeft()
-    {
-        body.velocity = new Vector2(-moveSpeed, body.velocity.y);
-    }
-
-    private void Jump()
-    {
-        body.velocity = new Vector2(body.velocity.x, jumpForce);
+        if (jumpsRemaining > 0)
+        {
+            body.velocity = new Vector2(body.velocity.x, jumpForce);
+            jumpsRemaining--;
+            Game.inst.SoundJump();
+        }
     }
 }
