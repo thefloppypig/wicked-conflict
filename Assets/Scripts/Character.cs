@@ -3,10 +3,9 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public abstract class Character : MonoBehaviour
+public abstract class Character : Damagable
 {
     public String state;
-    public float health;
     public float moveSpeed = 6;
     public float jumpForce = 5;
 
@@ -16,39 +15,19 @@ public abstract class Character : MonoBehaviour
     const int maxJumps = 1;
     protected float groundDistance = 0.8f;
 
-    protected Rigidbody2D body;
     protected Animator animate;
     protected SpriteRenderer sprite;
     [SerializeField]protected LayerMask collisionMask;
 
     // Start is called before the first frame update
-    protected virtual void Start()
+    protected new void Start()
     {
-        body = GetComponent<Rigidbody2D>();
+        base.Start();
         animate = GetComponent<Animator>();
         sprite = GetComponent<SpriteRenderer>();
+        groundDistance = 1.5f;
     }
 
-    public void TakeDamage(float d)
-    {
-        health -= d;
-        if (health<0)
-        {
-            health = 0;
-            Death();
-        }
-    }
-
-    public void TakeKnockback(Vector3 source, float strength)
-    {
-        Vector3 direction = transform.position - source;
-        body.AddForce((direction.normalized + Vector3.up / 5) * strength, ForceMode2D.Impulse);
-    }
-
-    protected void Death()
-    {
-        Destroy(gameObject, 3);
-    }
     protected void Idle()
     {
         body.velocity = new Vector2(0, body.velocity.y);

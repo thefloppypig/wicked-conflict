@@ -1,6 +1,8 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class Game : MonoBehaviour
 {
@@ -8,6 +10,11 @@ public class Game : MonoBehaviour
     public AudioClip clipshoot;
     public AudioClip clipjump;
     public AudioClip clipstep;
+
+    internal void SwitchScene(string scene)
+    {
+        SceneManager.LoadScene(scene);
+    }
 
     protected AudioSource audiosrc;
 

@@ -6,9 +6,13 @@ using UnityEngine;
 public class Player : Character
 {
     public float reload;
+    public float bulletSpeed = 14;
 
     protected float lastStepTime = 0;
     protected float lastShootTime = 0;
+    protected Vector3 offsetL = new Vector3(0.6f, -.20f,0);
+    protected Vector3 offsetR = new Vector3(-0.6f, -.20f,0);
+    public GameObject playerBulletPrefab;
 
     // Start is called before the first frame update
     protected new void Start()
@@ -20,21 +24,36 @@ public class Player : Character
 
     void Update()
     {
-        if (Input.GetKeyDown("space"))
+        if (canMove)
         {
-            Jump();
+            if (Input.GetKeyDown("space"))
+            {
+                Jump();
+            }
         }
-        if (Input.GetMouseButton(0))
+        if (Input.GetMouseButton(0) && canMove)
         {
             Shoot();
         }
         else animate.SetBool("Shooting", false);
+
     }
 
-    private void Shoot()
+    protected void Shoot()
     {
         if (Time.time > lastShootTime + reload)
         {
+            Bullet b;
+            if (sprite.flipX == false)
+            {
+                b = Instantiate(playerBulletPrefab, transform.position+offsetL, transform.rotation).GetComponent<Bullet>();
+                b.Init(bulletSpeed+body.velocity.x,this);
+            }
+            else
+            {
+                b = Instantiate(playerBulletPrefab, transform.position + offsetR, transform.rotation).GetComponent<Bullet>();
+                b.Init(-bulletSpeed+body.velocity.x,this);
+            }
             lastShootTime = Time.time;
             animate.SetBool("Shooting", true);
             Game.inst.SoundShoot();
@@ -44,7 +63,7 @@ public class Player : Character
 
     void FixedUpdate()
     {
-        PlayerMove();
+        if (canMove) PlayerMove();
         IsGrounded();
     }
 
@@ -81,5 +100,15 @@ public class Player : Character
             jumpsRemaining--;
             Game.inst.SoundJump();
         }
+    }
+
+    public void SetPlayerMove(bool move)
+    {
+        Idle();
+        animate.SetBool("Running", false);
+        animate.SetBool("Falling", false);
+        animate.SetBool("Shooting", false);
+        canMove = move;
+        lastShootTime = Time.time + 1;
     }
 }
