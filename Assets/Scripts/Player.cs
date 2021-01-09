@@ -2,6 +2,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class Player : Character
 {
@@ -19,7 +20,23 @@ public class Player : Character
     {
         base.Start();
         canMove = true;
-        groundDistance = 1.5f;
+        groundDistance = 1.8f;
+        SetPlayerLocation();
+    }
+
+    private void SetPlayerLocation()
+    {
+        string cl = Game.inst.currentLocation;
+        string ll = Game.inst.lastLocation;
+        if (cl == "Jeff's Home" && ll == "City District")
+        {
+            transform.position = new Vector2(33f, -6.7f);
+            GameObject.Find("Talk1Trigger").SetActive(false);
+        }
+        else if (false)
+        {
+            transform.position = new Vector2(33.5f, -6.4f);
+        }
     }
 
     void Update()

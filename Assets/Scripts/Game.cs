@@ -10,10 +10,14 @@ public class Game : MonoBehaviour
     public AudioClip clipshoot;
     public AudioClip clipjump;
     public AudioClip clipstep;
+    public string currentLocation = "Jeff's Home";
+    public string lastLocation = "Jeff's Home";
 
-    internal void SwitchScene(string scene)
+    internal void SwitchScene(string nextScene)
     {
-        SceneManager.LoadScene(scene);
+        SceneManager.LoadScene(nextScene);
+        lastLocation = currentLocation;
+        currentLocation = nextScene;
     }
 
     protected AudioSource audiosrc;

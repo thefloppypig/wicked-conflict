@@ -9,9 +9,9 @@ EditorBuildSettings:
     path: Assets/Scenes/SampleScene.unity
     guid: 2cda990e2423bbf4892e6590ba056729
   - enabled: 1
-    path: Assets/Scenes/Start.unity
+    path: Assets/Scenes/Jeff's Home.unity
     guid: 74f2b02f1cc0c6e43ac620b2005be0f9
   - enabled: 1
-    path: Assets/Scenes/Intro.unity
+    path: Assets/Scenes/City District.unity
     guid: ea476bb555ea47049a4c2ee8c0a0bd52
   m_configObjects: {}
