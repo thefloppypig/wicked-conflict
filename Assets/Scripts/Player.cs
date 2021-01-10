@@ -14,6 +14,7 @@ public class Player : Character
     protected Vector3 offsetL = new Vector3(0.6f, -.20f,0);
     protected Vector3 offsetR = new Vector3(-0.6f, -.20f,0);
     public GameObject playerBulletPrefab;
+    protected HealthBar hb;
 
     // Start is called before the first frame update
     protected new void Start()
@@ -21,21 +22,43 @@ public class Player : Character
         base.Start();
         canMove = true;
         groundDistance = 1.8f;
+        jumpDelay = 0.05f;
         SetPlayerLocation();
+        hb = GameObject.Find("HUD").GetComponentInParent<HealthBar>();
     }
 
     private void SetPlayerLocation()
     {
-        string cl = Game.inst.currentLocation;
-        string ll = Game.inst.lastLocation;
+        Game g = Game.inst;
+        string cl = g.currentLocation;
+        string ll = g.lastLocation;
+        //player location
         if (cl == "Jeff's Home" && ll == "City District")
         {
             transform.position = new Vector2(33f, -6.7f);
             GameObject.Find("Talk1Trigger").SetActive(false);
         }
-        else if (false)
+        else if (cl == "City District" && ll == "Skeleton Bar")
         {
-            transform.position = new Vector2(33.5f, -6.4f);
+            transform.position = new Vector2(12.6528f, 0.35f);
+        }
+
+        //remove dead npcs
+        if (cl == "City District")
+        {
+            if (g.characterDeaths.Contains("Box1")) GameObject.Find("Box1").SetActive(false);
+            if (g.characterDeaths.Contains("Box2"))
+            {
+                GameObject.Find("Box2").SetActive(false);
+            }
+            if (g.characterDeaths.Contains("Skeleton1")) GameObject.Find("Skeleton1").SetActive(false);
+            if (g.characterDeaths.Contains("Imp1")) GameObject.Find("Imp1").SetActive(false);
+        }
+        if (cl == "Jeff's Home")
+        {
+            if (g.characterDeaths.Contains("Chicken")) GameObject.Find("Chicken").SetActive(false);
+            if (g.characterDeaths.Contains("Wood1")) GameObject.Find("Wood1").SetActive(false);
+            if (g.characterDeaths.Contains("Wood2")) GameObject.Find("Wood2").SetActive(false);
         }
     }
 
@@ -78,9 +101,16 @@ public class Player : Character
         
     }
 
+    public override void TakeDamage(float d)
+    {
+        base.TakeDamage(d);
+        hb.UpdateBar(d / 10);
+    }
+
     void FixedUpdate()
     {
         if (canMove) PlayerMove();
+        else Idle();
         IsGrounded();
     }
 
@@ -92,20 +122,16 @@ public class Player : Character
         {
             //stand still
             Idle();
-            animate.SetBool("Running", false);
-
         }
         else if (right)
         {
             MoveLeft();
-            animate.SetBool("Running", true);
-            sprite.flipX = true;
+            
         }
         else if (left)
         {
             MoveRight();
-            animate.SetBool("Running", true);
-            sprite.flipX = false;
+            
         }
 
     }

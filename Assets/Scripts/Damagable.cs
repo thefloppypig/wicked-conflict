@@ -4,18 +4,20 @@ using UnityEngine;
 
 public abstract class Damagable : MonoBehaviour
 {
-    public float health;
+    public float health=0;
     protected Rigidbody2D body;
+    protected SpriteRenderer sprite;
 
     protected virtual void Start()
     {
         body = GetComponent<Rigidbody2D>();
-        
+        sprite = GetComponent<SpriteRenderer>();
     }
-    public void TakeDamage(float d)
+    public virtual void TakeDamage(float d)
     {
+        StartCoroutine(DamageFlash());
         health -= d;
-        if (health < 0)
+        if (health <= 0)
         {
             health = 0;
             Death();
@@ -28,8 +30,16 @@ public abstract class Damagable : MonoBehaviour
         body.AddForce((direction.normalized + Vector3.up / 5) * strength, ForceMode2D.Impulse);
     }
 
-    protected void Death()
+    protected virtual void Death()
     {
-        Destroy(gameObject);
+        Destroy(gameObject,0.1f);
+    }
+
+    IEnumerator DamageFlash()
+    {
+        sprite.color = Color.red;
+        yield return new WaitForSeconds(0.1f);
+        sprite.color = Color.white;
+
     }
 }

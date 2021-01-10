@@ -13,6 +13,12 @@ public class Game : MonoBehaviour
     public string currentLocation = "Jeff's Home";
     public string lastLocation = "Jeff's Home";
 
+    public int impRep = 0;
+    public int skeleRep = 0;
+
+    public List<string> characterDeaths;
+
+
     internal void SwitchScene(string nextScene)
     {
         SceneManager.LoadScene(nextScene);
