@@ -42,15 +42,20 @@ public class Player : Character
         {
             transform.position = new Vector2(12.6528f, 0.35f);
         }
+        else if (cl == "City District" && ll == "King's Quarters")
+        {
+            transform.position = new Vector2(27.61727f, 0.35f);
+        }
+        else if (cl == "City District" && ll == "Imp Hideout")
+        {
+            transform.position = new Vector2(42.34438f, 0.35f);
+        }
 
         //remove dead npcs
         if (cl == "City District")
         {
             if (g.characterDeaths.Contains("Box1")) GameObject.Find("Box1").SetActive(false);
-            if (g.characterDeaths.Contains("Box2"))
-            {
-                GameObject.Find("Box2").SetActive(false);
-            }
+            if (g.characterDeaths.Contains("Box2")) GameObject.Find("Box2").SetActive(false);
             if (g.characterDeaths.Contains("Skeleton1")) GameObject.Find("Skeleton1").SetActive(false);
             if (g.characterDeaths.Contains("Imp1")) GameObject.Find("Imp1").SetActive(false);
         }
@@ -59,6 +64,11 @@ public class Player : Character
             if (g.characterDeaths.Contains("Chicken")) GameObject.Find("Chicken").SetActive(false);
             if (g.characterDeaths.Contains("Wood1")) GameObject.Find("Wood1").SetActive(false);
             if (g.characterDeaths.Contains("Wood2")) GameObject.Find("Wood2").SetActive(false);
+        }
+        if (cl == "Imp Hideout")
+        {
+            if (g.characterDeaths.Contains("Wood3")) GameObject.Find("Wood3").SetActive(false);
+            if (g.characterDeaths.Contains("Wood4")) GameObject.Find("Wood4").SetActive(false);
         }
     }
 
