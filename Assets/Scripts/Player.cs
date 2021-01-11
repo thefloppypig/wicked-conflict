@@ -66,7 +66,7 @@ public class Player : Character
         }
         if (cl == "Imp Hideout")
         {
-            string[] inp = { "Wood3", "Wood4","Imp31","Imp32"};
+            string[] inp = { "Wood3", "Wood4","Imp31","Imp32","Imp33","ImpLeader"};
             foreach (string i in inp)
                 if (g.characterDeaths.Contains(i)) GameObject.Find(i).SetActive(false);
         }
@@ -183,5 +183,10 @@ public class Player : Character
         animate.SetTrigger("Death");
         Game.inst.PlayerDeath();
         SetPlayerMove(false);
+    }
+
+    public void EndingBetrayal()
+    {
+        Game.inst.SwitchScene("EndingBetrayal");
     }
 }

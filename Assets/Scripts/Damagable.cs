@@ -7,11 +7,13 @@ public abstract class Damagable : MonoBehaviour
     public float health=0;
     protected Rigidbody2D body;
     protected SpriteRenderer sprite;
+    protected Color entitycolor;
 
     protected virtual void Start()
     {
         body = GetComponent<Rigidbody2D>();
         sprite = GetComponent<SpriteRenderer>();
+        entitycolor = sprite.color;
     }
     public virtual void TakeDamage(float d)
     {
@@ -39,7 +41,7 @@ public abstract class Damagable : MonoBehaviour
     {
         sprite.color = Color.red;
         yield return new WaitForSeconds(0.1f);
-        sprite.color = Color.white;
+        sprite.color = entitycolor;
 
     }
 }

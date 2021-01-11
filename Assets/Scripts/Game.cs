@@ -86,4 +86,6 @@ public class Game : MonoBehaviour
     {
         SwitchScene(SceneManager.GetActiveScene().name);
     }
+
+    
 }
