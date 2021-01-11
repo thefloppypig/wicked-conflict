@@ -7,10 +7,12 @@ using UnityEngine.SceneManagement;
 public class Game : MonoBehaviour
 {
     public static Game inst;
+    public GameObject deathScreen;
     public AudioClip clipshoot;
     public AudioClip clipjump;
     public AudioClip clipstep;
     public AudioClip cliphurt;
+    public AudioClip clipdeath;
     public string currentLocation = "Jeff's Home";
     public string lastLocation = "Jeff's Home";
 
@@ -20,11 +22,12 @@ public class Game : MonoBehaviour
     public List<string> characterDeaths;
 
 
-    internal void SwitchScene(string nextScene)
+    public void SwitchScene(string nextScene)
     {
         SceneManager.LoadScene(nextScene);
         lastLocation = currentLocation;
         currentLocation = nextScene;
+        deathScreen.SetActive(false);
     }
 
     protected AudioSource audiosrc;
@@ -69,6 +72,18 @@ public class Game : MonoBehaviour
 
     public void PlayerDeath()
     {
+        audiosrc.PlayOneShot(clipdeath);
+        StartCoroutine(DeathScreen());
+    }
 
+    IEnumerator DeathScreen()
+    {
+        yield return new WaitForSeconds(0.5f);
+        deathScreen.SetActive(true);
+    }
+
+    public void Respawn()
+    {
+        SwitchScene(SceneManager.GetActiveScene().name);
     }
 }

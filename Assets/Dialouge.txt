@@ -47,3 +47,13 @@ Bar Owner: Looks like you already killed him, thanks for helping!
 Bar Owner: The skeletons know you helped me!
 Bar Owner: I have disposed of the imp.
 Bar Owner: The skeletons know you helped me!
+
+Skeleton: King's Quarters... doesn't look like a king lives here does it...
+Skeleton: After the imps came, they drained all our resources, leaving us in shambles.
+Skeleton: We skeletons used to look like you did...
+
+Skeleton: At first when the imps arrived, we welcomed them with open arms.
+Skeleton: We shouldn't have trusted such wicked creatures.
+
+Skeleton: In this fight, there can only be one winner.
+Skeleton: You need to pick a side! Go and kill those wretched imps!

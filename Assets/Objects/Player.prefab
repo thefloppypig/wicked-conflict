@@ -185,6 +185,7 @@ MonoBehaviour:
   health: 10
   moveSpeed: 6
   jumpForce: 7
+  canMove: 1
   collisionMask:
     serializedVersion: 2
     m_Bits: 512

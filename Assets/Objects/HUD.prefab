@@ -178,7 +178,6 @@ GameObject:
   - component: {fileID: 5807781650817074168}
   - component: {fileID: 925770535800972011}
   - component: {fileID: 2515052635882037419}
-  - component: {fileID: 4773909323323228261}
   m_Layer: 5
   m_Name: Reputation
   m_TagString: Untagged
@@ -250,18 +249,6 @@ MonoBehaviour:
     m_VerticalOverflow: 0
     m_LineSpacing: 1
   m_Text: Reputation
---- !u!114 &4773909323323228261
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4330396148609544516}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5f59b49db889c584b9d9bb3e77660de2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &4619221880082443558
 GameObject:
   m_ObjectHideFlags: 0

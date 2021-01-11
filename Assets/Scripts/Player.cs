@@ -76,6 +76,12 @@ public class Player : Character
             foreach (string i in inp)
                 if (g.characterDeaths.Contains(i)) GameObject.Find(i).SetActive(false);
         }
+        if (cl == "King's Quarters")
+        {
+            string[] inp = { "Skeleton21", "Skeleton22", "Skeleton23", "Skeleton24"};
+            foreach (string i in inp)
+                if (g.characterDeaths.Contains(i)) GameObject.Find(i).SetActive(false);
+        }
     }
 
     void Update()
