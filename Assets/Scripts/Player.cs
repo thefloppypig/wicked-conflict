@@ -66,7 +66,7 @@ public class Player : Character
         }
         if (cl == "Imp Hideout")
         {
-            string[] inp = { "Wood3", "Wood4"};
+            string[] inp = { "Wood3", "Wood4","Imp31","Imp32"};
             foreach (string i in inp)
                 if (g.characterDeaths.Contains(i)) GameObject.Find(i).SetActive(false);
         }
@@ -78,7 +78,7 @@ public class Player : Character
         }
         if (cl == "King's Quarters")
         {
-            string[] inp = { "Skeleton21", "Skeleton22", "Skeleton23", "Skeleton24"};
+            string[] inp = { "Skeleton21", "Skeleton22", "Skeleton23", "Skeleton24", "SkeletonKing"};
             foreach (string i in inp)
                 if (g.characterDeaths.Contains(i)) GameObject.Find(i).SetActive(false);
         }

@@ -16,6 +16,6 @@ public class RepBar : MonoBehaviour
     // Update is called once per frame
     public void UpdateText()
     {
-        t.text = Game.inst.skeleRep + "    " + Game.inst.impRep;
+        t.text = Game.inst.skeleRep + "  " + Game.inst.impRep;
     }
 }
