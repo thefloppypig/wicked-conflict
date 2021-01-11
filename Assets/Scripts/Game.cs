@@ -10,6 +10,7 @@ public class Game : MonoBehaviour
     public AudioClip clipshoot;
     public AudioClip clipjump;
     public AudioClip clipstep;
+    public AudioClip cliphurt;
     public string currentLocation = "Jeff's Home";
     public string lastLocation = "Jeff's Home";
 
@@ -42,6 +43,12 @@ public class Game : MonoBehaviour
         }
     }
 
+    public void UpdateRep()
+    {
+        GameObject hud = GameObject.Find("HUD");
+        if (hud != null && hud.GetComponentInChildren<RepBar>() != null) hud.GetComponentInChildren<RepBar>().UpdateText();
+    }
+
     public void SoundShoot()
     {
         audiosrc.PlayOneShot(clipshoot);
@@ -54,5 +61,14 @@ public class Game : MonoBehaviour
     public void SoundStep()
     {
         audiosrc.PlayOneShot(clipstep);
+    }
+    public void SoundHurt()
+    {
+        audiosrc.PlayOneShot(cliphurt);
+    }
+
+    public void PlayerDeath()
+    {
+
     }
 }

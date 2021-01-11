@@ -33,14 +33,14 @@ public abstract class Character : Damagable
         animate.SetBool("Running", false);
     }
 
-    protected void MoveRight()
+    public void MoveRight()
     {
         body.velocity = new Vector2(moveSpeed, body.velocity.y);
         animate.SetBool("Running", true);
         sprite.flipX = false;
     }
 
-    protected void MoveLeft()
+    public void MoveLeft()
     {
         body.velocity = new Vector2(-moveSpeed, body.velocity.y);
         animate.SetBool("Running", true);

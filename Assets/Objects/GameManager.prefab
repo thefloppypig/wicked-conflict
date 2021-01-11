@@ -46,3 +46,9 @@ MonoBehaviour:
   clipshoot: {fileID: 8300000, guid: 68236f18e5ac3d34faa681aad77b6189, type: 3}
   clipjump: {fileID: 8300000, guid: 007254d8035057043a79e95765f17b21, type: 3}
   clipstep: {fileID: 0}
+  cliphurt: {fileID: 8300000, guid: cd6a58f0daa857c47bfaeb3d2df744ab, type: 3}
+  currentLocation: Jeff's Home
+  lastLocation: Jeff's Home
+  impRep: 0
+  skeleRep: 0
+  characterDeaths: []

@@ -24,7 +24,7 @@ public class Player : Character
         groundDistance = 1.8f;
         jumpDelay = 0.05f;
         SetPlayerLocation();
-        hb = GameObject.Find("HUD").GetComponentInParent<HealthBar>();
+        hb = GameObject.Find("HUD").GetComponentInChildren<HealthBar>();
     }
 
     private void SetPlayerLocation()
@@ -54,21 +54,27 @@ public class Player : Character
         //remove dead npcs
         if (cl == "City District")
         {
-            if (g.characterDeaths.Contains("Box1")) GameObject.Find("Box1").SetActive(false);
-            if (g.characterDeaths.Contains("Box2")) GameObject.Find("Box2").SetActive(false);
-            if (g.characterDeaths.Contains("Skeleton1")) GameObject.Find("Skeleton1").SetActive(false);
-            if (g.characterDeaths.Contains("Imp1")) GameObject.Find("Imp1").SetActive(false);
+            string[] inp = { "Box1", "Box2", "Skeleton1", "Skeleton2", "Skeleton3", "Imp1", "Imp2", "Imp3","Imp4" };
+            foreach (string i in inp)
+                if (g.characterDeaths.Contains(i)) GameObject.Find(i).SetActive(false);
         }
         if (cl == "Jeff's Home")
         {
-            if (g.characterDeaths.Contains("Chicken")) GameObject.Find("Chicken").SetActive(false);
-            if (g.characterDeaths.Contains("Wood1")) GameObject.Find("Wood1").SetActive(false);
-            if (g.characterDeaths.Contains("Wood2")) GameObject.Find("Wood2").SetActive(false);
+            string[] inp = { "Chicken", "Wood1", "Wood2"};
+            foreach (string i in inp)
+                if (g.characterDeaths.Contains(i)) GameObject.Find(i).SetActive(false);
         }
         if (cl == "Imp Hideout")
         {
-            if (g.characterDeaths.Contains("Wood3")) GameObject.Find("Wood3").SetActive(false);
-            if (g.characterDeaths.Contains("Wood4")) GameObject.Find("Wood4").SetActive(false);
+            string[] inp = { "Wood3", "Wood4"};
+            foreach (string i in inp)
+                if (g.characterDeaths.Contains(i)) GameObject.Find(i).SetActive(false);
+        }
+        if (cl == "Skeleton Bar")
+        {
+            string[] inp = { "Box11", "Skeleton11", "Skeleton12", "Imp11"};
+            foreach (string i in inp)
+                if (g.characterDeaths.Contains(i)) GameObject.Find(i).SetActive(false);
         }
     }
 
@@ -114,7 +120,8 @@ public class Player : Character
     public override void TakeDamage(float d)
     {
         base.TakeDamage(d);
-        hb.UpdateBar(d / 10);
+        if (hb!=null)
+            hb.UpdateBar(health / 10);
     }
 
     void FixedUpdate()
@@ -163,5 +170,12 @@ public class Player : Character
         animate.SetBool("Shooting", false);
         canMove = move;
         lastShootTime = Time.time + 1;
+    }
+
+    protected override void Death()
+    {
+        animate.SetTrigger("Death");
+        Game.inst.PlayerDeath();
+        SetPlayerMove(false);
     }
 }

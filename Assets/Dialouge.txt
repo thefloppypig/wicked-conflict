@@ -1,18 +1,49 @@
-Jeff: Today is the day...
+Jeff: Today is the day of the uprising...
 Jeff: I wonder which side will win,
 Jeff: I should go see what is happening.
 
 Bert: (Bert looks happy to see you!)
 
-Imp Citizen: Hm? You live in there? Sucks to be you.
-Imp Citizen: Nice weapon though. Not many ones like that around here.
-Imp Citizen: Be careful what you shoot. If you shoot me i'll smash your face off.
-Imp Citizen: Kill the guy above us instead...
-Imp Citizen: He's so annoying with his stupid box.
+Imp: Nice weapon. Not many ones like that around here.
+Imp: Be careful what you shoot. If you shoot me i'll smash your face off.
+Imp: Kill the guy above us instead...
+Imp: We must overthrow those dumb skeletons!
+Imp: Join the revolution! Or perish.
 
-Skeleton Citizen: Stay away from the box!
-Skeleton Citizen: This box contains the bones of my fellow skeletons
-Skeleton Citizen: They were killed by the imps...
-Skeleton Citizen: Those imps should be banished!
+Skeleton: Stay away from the box!
+Skeleton: This box contains crucial supplies to survive!
+Skeleton: The imps are trying to destroy them...
+Skeleton: Those imps should be banished!
 
+Skeleton: Those imps are threatening to destroy our buildings!
+Skeleton: You have a strong weapon, you can help us! 
+Skeleton: Please help!
 
+Imp: Hey you! Guy with fancy weapon! Yes you!
+Imp: Help us take the city!
+Imp: We Imps have been neglected for too long!
+
+Imp: We are going to defeat those skeletons once and for all.
+Imp: Help us and we will repay you!
+
+Imp: Nothing to see in this building.
+
+Skeleton: Rumor says the imps have been planning something in the abandoned building.
+Skeleton: I don't think they have noticed me here yet.
+
+Bar Owner: You aren't here to kill us are you?
+Bar Owner: Man... owning a bar is tough these days...
+
+Imp: Heh heh I managed to sneak in! I'm going to make a ruckus.
+Imp: Don't you dare tell the bar owner.
+
+Skeleton: The atmosphere is dead, is there an important event today or something?
+
+Bar Owner: There's an Imp hiding in the back of the bar?
+Bar Owner: Thanks for telling me! I will deal with it...
+Bar Owner: I will make sure the skeletons know you helped me!
+
+Bar Owner: Looks like you already killed him, thanks for helping!
+Bar Owner: The skeletons know you helped me!
+Bar Owner: I have disposed of the imp.
+Bar Owner: The skeletons know you helped me!
