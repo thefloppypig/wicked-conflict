@@ -96,6 +96,7 @@ public class NPC : Character
     {
         if (!alive) return;
         alive = false;
+        animate.SetTrigger("Death");
         Game.inst.characterDeaths.Add(gameObject.name);
         Game.inst.impRep += deathRepImp;
         Game.inst.skeleRep += deathRepSkele;
