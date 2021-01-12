@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class ImpLeader : MonoBehaviour
+public class SkeleKing : MonoBehaviour
 {
     public GameObject talk1;
     public GameObject talk2;
@@ -19,7 +19,7 @@ public class ImpLeader : MonoBehaviour
 
     void CheckRep()
     {
-        if (Game.inst.impRep < 15)
+        if (Game.inst.skeleRep < 15)
         {
             talk1.SetActive(true);
             talk2.SetActive(false);
@@ -33,6 +33,6 @@ public class ImpLeader : MonoBehaviour
 
     private void OnDisable()
     {
-        if (Game.inst.characterDeaths.Contains("SkeletonKing")) Game.inst.EndingAnarchy();
+        if (Game.inst.characterDeaths.Contains("ImpLeader")) Game.inst.EndingAnarchy();
     }
 }

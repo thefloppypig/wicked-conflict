@@ -188,5 +188,8 @@ public class Player : Character
     public void EndingBetrayal()
     {
         Game.inst.SwitchScene("EndingBetrayal");
+    }public void EndingAllied()
+    {
+        Game.inst.SwitchScene("EndingAllied");
     }
 }

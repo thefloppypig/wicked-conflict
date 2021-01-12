@@ -14,11 +14,16 @@ public class NPC : Character
     protected float lastAttack;
     protected float attackCooldown = 0.3f;
     protected bool alive = true;
+    public bool isSkele;
 
     // Start is called before the first frame update
     protected new void Start()
     {
         base.Start();
+        if (deathRepImp > 0) isSkele = true;
+        else isSkele = false;
+        if (isSkele && Game.inst.skeleRep <= -5) BecomeAggressive();
+        if (!isSkele && Game.inst.impRep <= -5) BecomeAggressive();
     }
 
     // Update is called once per frame
@@ -70,7 +75,21 @@ public class NPC : Character
     public override void TakeDamage(float d)
     {
         BecomeAggressive();
+        MakeOthersAggressive();
         base.TakeDamage(d);
+    }
+
+    public void MakeOthersAggressive()
+    {
+        Collider2D[] cs = Physics2D.OverlapCircleAll(transform.position, 10f);
+        foreach (Collider2D c in cs)
+        {
+            NPC npc = c.GetComponent<NPC>();
+            if (npc!=null && npc.isSkele == this.isSkele)
+            {
+                npc.BecomeAggressive();
+            }
+        }
     }
 
     protected override void Death()
@@ -84,7 +103,7 @@ public class NPC : Character
         base.Death();
     }
 
-    private void BecomeAggressive()
+    public void BecomeAggressive()
     {
         if (state == NPCstates.Aggresive) return;
         lastAttack = Time.time + attackCooldown;

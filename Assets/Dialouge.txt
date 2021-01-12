@@ -59,7 +59,7 @@ Skeleton: In this fight, there can only be one winner.
 Skeleton: You need to pick a side! Go and kill those wretched imps!
 
 Skeleton King: We are in a dire situation.
-Skeleton King: We need your help, please get 15 reputation to show us you are trustworthy.
+Skeleton King: We need your help, please get fifteen reputation to show us you are trustworthy.
 Skeleton King: If do it I promise I will reward you greatly. You have the king's word.
 Skeleton King: You can gain reputation by killing Imps and helping fellow Skeletons.
 Skeleton King: The Imps are wicked! Don't let them manipulate you.
@@ -72,7 +72,7 @@ Imp: I like your weapon, looks great for killing skeletons
 Imp: They are weaklings! They don't deserve to rule the city!
 
 Imp Leader: We are taking over the city! Mwhahahaha
-Imp Leader: Have you come to help us? If so, Get 15 reputation to prove your worth.
+Imp Leader: Have you come to help us? If so, Get fifteen reputation to prove your worth.
 Imp Leader: To get our reputation, go and kill those lousy skeletons.
 Imp Leader: If you help us we will welcome you into our gang...
 Imp Leader: Trust me... you do not want to be on the wrong side of this fight.
@@ -86,3 +86,6 @@ Imp Leader: Wow I must say I am impressed...
 Imp Leader: You murdered all those skeletons for us.
 Imp Leader: However...
 Imp Leader: We no longer have a use for you.
+
+Skeleton King: Wow! Your help has really changed the tide of the battle!
+Skeleton King: You are truly a wonderful ally, I hope we can work together in the future.

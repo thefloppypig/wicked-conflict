@@ -2202,7 +2202,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Name of game
+  m_Text: Wicked conflict
 --- !u!222 &1911433182
 CanvasRenderer:
   m_ObjectHideFlags: 0

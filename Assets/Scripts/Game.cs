@@ -87,5 +87,9 @@ public class Game : MonoBehaviour
         SwitchScene(SceneManager.GetActiveScene().name);
     }
 
+    public void EndingAnarchy()
+    {
+        SwitchScene("EndingAnarchy");
+    }
     
 }

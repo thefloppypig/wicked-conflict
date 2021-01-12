@@ -173,7 +173,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 0, b: 0, a: 1}
+  m_Color: {r: 0.42711782, g: 0, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -193,7 +193,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Betrayal Ending
+  m_Text: Anarchy Ending
 --- !u!222 &33114043
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -457,9 +457,12 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "Jeff decided to help the imps. \nInstead of rewarding Jeff for assisting
-    them, the imp leader decided to Exile him into the wasteland after he had served
-    his purpose.\n\nIf you serve the wicked, expect no reward"
+  m_Text: 'Jeff slaughtered the imp leader and the skeleton king, and claimed the
+    city as his own. In disarry, the skeletons and imps left the city in ruin.
+
+
+    Maybe
+    Jeff was the wicked one after all.'
 --- !u!222 &613569493
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -486,7 +489,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   obj: {fileID: 1719111270}
-  delay: 5
+  delay: 2.5
 --- !u!1001 &760212817
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -544,11 +547,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 55cb9f36f7ecc6a4b89d09255e4ded5f, type: 3}
---- !u!4 &1227174292 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 2720989914211040661, guid: f49d8f70dcf853142a3de4bf42abb31d, type: 3}
-  m_PrefabInstance: {fileID: 2050232621}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1617321142
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -695,7 +693,6 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 390649629}
-  - {fileID: 1227174292}
   m_Father: {fileID: 528004375}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -778,71 +775,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 40ce48baa89667f40bddad1d335098c2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!1001 &2050232621
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 1719111271}
-    m_Modifications:
-    - target: {fileID: 2720989914211040660, guid: f49d8f70dcf853142a3de4bf42abb31d, type: 3}
-      propertyPath: Loop
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2720989914211040660, guid: f49d8f70dcf853142a3de4bf42abb31d, type: 3}
-      propertyPath: m_audioClip
-      value: 
-      objectReference: {fileID: 8300000, guid: dda40f86d441b444691b2b5080ae6092, type: 3}
-    - target: {fileID: 2720989914211040661, guid: f49d8f70dcf853142a3de4bf42abb31d, type: 3}
-      propertyPath: m_RootOrder
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 2720989914211040661, guid: f49d8f70dcf853142a3de4bf42abb31d, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2720989914211040661, guid: f49d8f70dcf853142a3de4bf42abb31d, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2720989914211040661, guid: f49d8f70dcf853142a3de4bf42abb31d, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0.000011444092
-      objectReference: {fileID: 0}
-    - target: {fileID: 2720989914211040661, guid: f49d8f70dcf853142a3de4bf42abb31d, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 2720989914211040661, guid: f49d8f70dcf853142a3de4bf42abb31d, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2720989914211040661, guid: f49d8f70dcf853142a3de4bf42abb31d, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2720989914211040661, guid: f49d8f70dcf853142a3de4bf42abb31d, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2720989914211040661, guid: f49d8f70dcf853142a3de4bf42abb31d, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2720989914211040661, guid: f49d8f70dcf853142a3de4bf42abb31d, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2720989914211040661, guid: f49d8f70dcf853142a3de4bf42abb31d, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2720989914211040663, guid: f49d8f70dcf853142a3de4bf42abb31d, type: 3}
-      propertyPath: m_Name
-      value: Music (1)
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: f49d8f70dcf853142a3de4bf42abb31d, type: 3}
 --- !u!1001 &2143655187
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -852,12 +784,12 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 2720989914211040660, guid: f49d8f70dcf853142a3de4bf42abb31d, type: 3}
       propertyPath: Loop
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2720989914211040660, guid: f49d8f70dcf853142a3de4bf42abb31d, type: 3}
       propertyPath: m_audioClip
       value: 
-      objectReference: {fileID: 8300000, guid: c1536d236114727458b1b8ee8e081004, type: 3}
+      objectReference: {fileID: 8300000, guid: ce8e7a99fa4cc874d914d47e3d96525e, type: 3}
     - target: {fileID: 2720989914211040661, guid: f49d8f70dcf853142a3de4bf42abb31d, type: 3}
       propertyPath: m_RootOrder
       value: 3
