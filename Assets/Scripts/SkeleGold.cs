@@ -8,6 +8,7 @@ public class SkeleGold : MonoBehaviour
     public GameObject dialog2;
     public GameObject dialog3;
     public GameObject dialog4;
+    public GameObject dialog5;
     // Start is called before the first frame update
     void Start()
     {
@@ -20,6 +21,11 @@ public class SkeleGold : MonoBehaviour
         {
             dialog1.SetActive(false);
             dialog4.SetActive(true);
+        }
+        else if (Game.inst.characterDeaths.Contains("ImpBronze"))
+        {
+            dialog1.SetActive(false);
+            dialog5.SetActive(true);
         }
         else if (Game.inst.characterDeaths.Contains("Chicken"))
         {
