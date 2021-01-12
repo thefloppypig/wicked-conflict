@@ -2156,12 +2156,20 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7356489019854434723, guid: 334ff21cd18ece94e956e943c8191689, type: 3}
+      propertyPath: passWithMouse
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7356489019854434723, guid: 334ff21cd18ece94e956e943c8191689, type: 3}
       propertyPath: sprites.Array.size
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7356489019854434723, guid: 334ff21cd18ece94e956e943c8191689, type: 3}
       propertyPath: animatorWhenTalking
       value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 7356489019854434723, guid: 334ff21cd18ece94e956e943c8191689, type: 3}
+      propertyPath: passWithInputButton
+      value: Jump
       objectReference: {fileID: 0}
     - target: {fileID: 7356489019854434723, guid: 334ff21cd18ece94e956e943c8191689, type: 3}
       propertyPath: characters.Array.size
@@ -9010,6 +9018,14 @@ PrefabInstance:
     - target: {fileID: 1183565066985866427, guid: cbf64d84b3a434946b4055f08d7aafae, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8537595509566521967, guid: cbf64d84b3a434946b4055f08d7aafae, type: 3}
+      propertyPath: passWithMouse
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8537595509566521967, guid: cbf64d84b3a434946b4055f08d7aafae, type: 3}
+      propertyPath: passWithInputButton
+      value: Jump
       objectReference: {fileID: 0}
     - target: {fileID: 8537595509566521967, guid: cbf64d84b3a434946b4055f08d7aafae, type: 3}
       propertyPath: callback.m_PersistentCalls.m_Calls.Array.data[0].m_Target

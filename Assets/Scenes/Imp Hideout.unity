@@ -376,7 +376,7 @@ MonoBehaviour:
   shouldStayOnScreen: 0
   textAudio: {fileID: 8300000, guid: 49c855462770641229c932e59dd505e5, type: 3}
   passAudio: {fileID: 8300000, guid: a8b5ae316e8c14602bc3114d2d5e8302, type: 3}
-  passWithMouse: 1
+  passWithMouse: 0
   passWithInputButton: Jump
   passWithKey: 0
   enablePass: 1
@@ -610,7 +610,7 @@ MonoBehaviour:
   shouldStayOnScreen: 0
   textAudio: {fileID: 8300000, guid: 49c855462770641229c932e59dd505e5, type: 3}
   passAudio: {fileID: 8300000, guid: a8b5ae316e8c14602bc3114d2d5e8302, type: 3}
-  passWithMouse: 1
+  passWithMouse: 0
   passWithInputButton: Jump
   passWithKey: 0
   enablePass: 1
@@ -4241,7 +4241,7 @@ MonoBehaviour:
   shouldStayOnScreen: 0
   textAudio: {fileID: 8300000, guid: 49c855462770641229c932e59dd505e5, type: 3}
   passAudio: {fileID: 8300000, guid: a8b5ae316e8c14602bc3114d2d5e8302, type: 3}
-  passWithMouse: 1
+  passWithMouse: 0
   passWithInputButton: Jump
   passWithKey: 0
   enablePass: 1
@@ -4342,7 +4342,7 @@ MonoBehaviour:
   shouldStayOnScreen: 0
   textAudio: {fileID: 8300000, guid: 49c855462770641229c932e59dd505e5, type: 3}
   passAudio: {fileID: 8300000, guid: a8b5ae316e8c14602bc3114d2d5e8302, type: 3}
-  passWithMouse: 1
+  passWithMouse: 0
   passWithInputButton: Jump
   passWithKey: 0
   enablePass: 1
@@ -8780,7 +8780,7 @@ MonoBehaviour:
   shouldStayOnScreen: 0
   textAudio: {fileID: 8300000, guid: 49c855462770641229c932e59dd505e5, type: 3}
   passAudio: {fileID: 8300000, guid: a8b5ae316e8c14602bc3114d2d5e8302, type: 3}
-  passWithMouse: 1
+  passWithMouse: 0
   passWithInputButton: Jump
   passWithKey: 0
   enablePass: 1
@@ -9061,7 +9061,7 @@ MonoBehaviour:
   shouldStayOnScreen: 0
   textAudio: {fileID: 8300000, guid: 49c855462770641229c932e59dd505e5, type: 3}
   passAudio: {fileID: 8300000, guid: a8b5ae316e8c14602bc3114d2d5e8302, type: 3}
-  passWithMouse: 1
+  passWithMouse: 0
   passWithInputButton: Jump
   passWithKey: 0
   enablePass: 1
@@ -13438,7 +13438,7 @@ MonoBehaviour:
   shouldStayOnScreen: 0
   textAudio: {fileID: 8300000, guid: 49c855462770641229c932e59dd505e5, type: 3}
   passAudio: {fileID: 8300000, guid: a8b5ae316e8c14602bc3114d2d5e8302, type: 3}
-  passWithMouse: 1
+  passWithMouse: 0
   passWithInputButton: Jump
   passWithKey: 0
   enablePass: 1
