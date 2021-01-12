@@ -22,7 +22,7 @@ public class Player : Character
         base.Start();
         canMove = true;
         groundDistance = 1.8f;
-        jumpDelay = 0.05f;
+        jumpDelay = 0.5f;
         SetPlayerLocation();
         hb = GameObject.Find("HUD").GetComponentInChildren<HealthBar>();
     }
@@ -88,7 +88,7 @@ public class Player : Character
     {
         if (canMove)
         {
-            if (Input.GetKeyDown("space"))
+            if (Input.GetKeyDown("space") || Input.GetKeyDown("w"))
             {
                 Jump();
             }
@@ -163,6 +163,7 @@ public class Player : Character
         if (jumpsRemaining > 0 && Time.time > lastJumpTime + jumpDelay)
         {
             body.velocity = new Vector2(body.velocity.x, jumpForce);
+            lastJumpTime = Time.time;
             jumpsRemaining--;
             Game.inst.SoundJump();
         }
@@ -175,8 +176,8 @@ public class Player : Character
         animate.SetBool("Falling", false);
         animate.SetBool("Shooting", false);
         canMove = move;
-        lastShootTime = Time.time + 1;
-        lastJumpTime = Time.time + 0.2f;
+        lastShootTime = Time.time + 0.8f;
+        lastJumpTime = Time.time + 0.1f;
     }
 
     protected override void Death()

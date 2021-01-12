@@ -53,6 +53,7 @@ public abstract class Character : Damagable
         {
             body.velocity = new Vector2(body.velocity.x, jumpForce);
             jumpsRemaining--;
+            lastJumpTime = Time.time;
         }
     }
     protected void IsGrounded()
