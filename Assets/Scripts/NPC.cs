@@ -63,7 +63,11 @@ public class NPC : Character
             {
                 if (c == cp)
                 {
-                    Invoke("DoDamage", 0.0f);
+                    animate.SetTrigger("Attack");
+                    for (int i = 0; i < 5; i++)
+                    {
+                        Invoke("DoDamage", 0.2f);
+                    }
                     lastAttack = Time.time + attackCooldown;
                     break;
                 }
@@ -74,7 +78,6 @@ public class NPC : Character
 
     private void DoDamage()
     {
-        animate.SetTrigger("Attack");
         player.TakeDamage(1);
         player.TakeKnockback(transform.position, 2);
         Game.inst.SoundHurt();
