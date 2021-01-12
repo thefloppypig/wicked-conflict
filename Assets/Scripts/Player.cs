@@ -22,7 +22,7 @@ public class Player : Character
         base.Start();
         canMove = true;
         groundDistance = 1.8f;
-        jumpDelay = 0.5f;
+        jumpDelay = 0.3f;
         SetPlayerLocation();
         hb = GameObject.Find("HUD").GetComponentInChildren<HealthBar>();
     }
@@ -60,15 +60,28 @@ public class Player : Character
         }
         if (cl == "Jeff's Home")
         {
-            string[] inp = { "Chicken", "Wood1", "Wood2"};
+            string[] inp = { "Wood1", "Wood2"};
             foreach (string i in inp)
                 if (g.characterDeaths.Contains(i)) GameObject.Find(i).SetActive(false);
         }
-        if (cl == "Imp Hideout")
+        if (cl == "Bert's Home")
         {
-            string[] inp = { "Wood3", "Wood4","Imp31","Imp32","Imp33","ImpLeader"};
+            string[] inp = {"Wood1", "Wood2"};
             foreach (string i in inp)
                 if (g.characterDeaths.Contains(i)) GameObject.Find(i).SetActive(false);
+            if (g.characterDeaths.Contains("ImpBronzeS"))
+            {
+                GameObject.Find("Imp691").SetActive(false);
+                GameObject.Find("Imp692").SetActive(false);
+                GameObject.Find("Imp693").SetActive(false);
+            }
+        }
+        if (cl == "Imp Hideout")
+        {
+            string[] inp = { "Wood3", "Wood4","Imp31","Imp32","Imp33","ImpLeader","ImpBronze"};
+            foreach (string i in inp)
+                if (g.characterDeaths.Contains(i)) GameObject.Find(i).SetActive(false);
+            if (g.characterDeaths.Contains("ImpBronzeS")) GameObject.Find("ImpBronze").SetActive(false);
         }
         if (cl == "Skeleton Bar")
         {
@@ -78,7 +91,7 @@ public class Player : Character
         }
         if (cl == "King's Quarters")
         {
-            string[] inp = { "Skeleton21", "Skeleton22", "Skeleton23", "Skeleton24", "SkeletonKing"};
+            string[] inp = { "Skeleton21", "Skeleton22", "Skeleton23", "Skeleton24", "SkeletonKing","SkeletonGolden"};
             foreach (string i in inp)
                 if (g.characterDeaths.Contains(i)) GameObject.Find(i).SetActive(false);
         }
@@ -194,5 +207,13 @@ public class Player : Character
     public void EndingAllied()
     {
         Game.inst.EndingAllied();
+    }
+    public void EndingHappy()
+    {
+        Game.inst.EndingHappy();
+    }
+    public void EndingSad()
+    {
+        Game.inst.EndingSad();
     }
 }

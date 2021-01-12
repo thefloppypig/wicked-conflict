@@ -60,7 +60,7 @@ Skeleton: You need to pick a side! Go and kill those wretched imps!
 
 Skeleton King: We are in a dire situation.
 Skeleton King: We need your help, please get fifteen reputation to show us you are trustworthy.
-Skeleton King: If do it I promise I will reward you greatly. You have the king's word.
+Skeleton King: If do it I promise you will not regret it. You have the king's word.
 Skeleton King: You can gain reputation by killing Imps and helping fellow Skeletons.
 Skeleton King: The Imps are wicked! Don't let them manipulate you.
 
@@ -89,3 +89,34 @@ Imp Leader: We no longer have a use for you.
 
 Skeleton King: Wow! Your help has really changed the tide of the battle!
 Skeleton King: You are truly a wonderful ally, I hope we can work together in the future.
+
+Golden Skeleton: Have you seen an Imp made of Bronze? I have a bone to pick with him...
+
+Bronze Imp: Do you happen to own a chicken named Bert? Hahahaha
+Bronze Imp: That's right. We found your pitiful excuse for a home.
+Bronze Imp: Kill the Golden skeleton if you want your chicken to live.
+Bronze Imp: And DO NOT wait for what he has to say about it. Get him.
+Bronze Imp: If you kill me now, you will never see your chicken again...
+
+Golden Skeleton: What?? you have seen the Bronze Imp? 
+Golden Skeleton: He is threatning you???
+Golden Skeleton: Don't worry, now I know where he is, I will go and get my revenge...
+
+Bronze Imp: Good, Good... Impeccable work! The Golden Skeleton is dead!
+Bronze Imp: You should go back home and check on your chicken...
+
+Golden Skeleton: The Bronze Imp and his friends have been vanquished.
+Golden Skeleton: I have safely returned your chicken to your home.
+Golden Skeleton: Thanks for telling me where that evil imp was hiding.
+
+Golden Skeleton: You've killed the Bronze Imp???
+Golden Skeleton: I only wish I could have killed him myself.
+Golden Skeleton: Unfortunately, there is nothing I can do about your chicken.
+Golden Skeleton: Maybe check your home to see if he has returned?
+
+Jeff: I can't turn back now...
+
+Bert: (Bert isnt moving)
+
+Bert: (Bert looks happy to see you!)
+Bert: (... Bert always is happy to see you)

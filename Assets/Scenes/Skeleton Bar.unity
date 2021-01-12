@@ -2540,12 +2540,12 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 410644531}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.28, y: -0.26, z: 0}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -0.27999997, y: -0.26, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1037215767}
-  m_Father: {fileID: 6553739305705665917}
+  m_Father: {fileID: 1111240608}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &411013986
@@ -2748,6 +2748,7 @@ MonoBehaviour:
   player: {fileID: 0}
   deathRepImp: 2
   deathRepSkele: -1
+  isSkele: 0
 --- !u!212 &438029836
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -3986,12 +3987,12 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 970779530}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.28, y: -0.26, z: 0}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -0.27999997, y: -0.26, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 581875920}
-  m_Father: {fileID: 6553739305705665917}
+  m_Father: {fileID: 1111240608}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!61 &970779532
@@ -4382,6 +4383,40 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ee005bc77f4683940bcffda68efd7a07, type: 3}
+--- !u!1 &1111240607
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1111240608}
+  m_Layer: 8
+  m_Name: TalkObject
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1111240608
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1111240607}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 5377105561867921897}
+  - {fileID: 1468077192}
+  - {fileID: 970779531}
+  - {fileID: 410644534}
+  m_Father: {fileID: 6553739305705665917}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1161251029
 GameObject:
   m_ObjectHideFlags: 0
@@ -5733,12 +5768,12 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1468077191}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.28, y: -0.26, z: 0}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -0.27999997, y: -0.26, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1884258934}
-  m_Father: {fileID: 6553739305705665917}
+  m_Father: {fileID: 1111240608}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!61 &1468077193
@@ -12170,6 +12205,7 @@ MonoBehaviour:
   player: {fileID: 0}
   deathRepImp: -1
   deathRepSkele: 2
+  isSkele: 0
 --- !u!4 &5200275024784158700
 Transform:
   m_ObjectHideFlags: 0
@@ -12372,12 +12408,12 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5377105561867921894}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.28, y: -0.26, z: 0}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -0.27999997, y: -0.26, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 3208866192823807804}
-  m_Father: {fileID: 6553739305705665917}
+  m_Father: {fileID: 1111240608}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &6361273712922072646
@@ -12620,10 +12656,7 @@ Transform:
   m_LocalPosition: {x: -3.76, y: -3.84, z: -11.049666}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
-  - {fileID: 5377105561867921897}
-  - {fileID: 1468077192}
-  - {fileID: 970779531}
-  - {fileID: 410644534}
+  - {fileID: 1111240608}
   m_Father: {fileID: 0}
   m_RootOrder: 16
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -12697,11 +12730,12 @@ MonoBehaviour:
   collisionMask:
     serializedVersion: 2
     m_Bits: 512
-  dialogObject: {fileID: 5377105561867921894}
+  dialogObject: {fileID: 1111240607}
   state: 0
   player: {fileID: 0}
   deathRepImp: 2
   deathRepSkele: -1
+  isSkele: 0
 --- !u!1001 &7187780130115637708
 PrefabInstance:
   m_ObjectHideFlags: 0

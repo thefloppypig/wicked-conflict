@@ -35,4 +35,10 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/EndingAnarchy.unity
     guid: 4ab21e1096529a049b1bddc7f2bec206
+  - enabled: 1
+    path: Assets/Scenes/EndingHappy.unity
+    guid: 73563448e3740144ea13ca66c9ed6511
+  - enabled: 1
+    path: Assets/Scenes/EndingSad.unity
+    guid: e35dfb6ba4c724f4fabbc451b78b4c4c
   m_configObjects: {}

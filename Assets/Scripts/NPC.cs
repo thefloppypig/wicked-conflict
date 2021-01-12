@@ -82,7 +82,10 @@ public class NPC : Character
 
     public void MakeOthersAggressive()
     {
-        Collider2D[] cs = Physics2D.OverlapCircleAll(transform.position, 10f);
+        float radius = 10;
+        if (isSkele && Game.inst.skeleRep <= -5) radius = 50;
+        if (!isSkele && Game.inst.impRep <= -5) radius = 50;
+        Collider2D[] cs = Physics2D.OverlapCircleAll(transform.position, radius);
         foreach (Collider2D c in cs)
         {
             NPC npc = c.GetComponent<NPC>();
@@ -102,6 +105,7 @@ public class NPC : Character
         Game.inst.impRep += deathRepImp;
         Game.inst.skeleRep += deathRepSkele;
         Game.inst.UpdateRep();
+        MakeOthersAggressive();
         deathTime = 1;
         base.Death();
     }

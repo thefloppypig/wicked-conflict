@@ -96,6 +96,12 @@ public class Game : MonoBehaviour
     }public void EndingBetrayal()
     {
         SwitchScene("EndingBetrayal");
+    }public void EndingHappy()
+    {
+        SwitchScene("EndingHappy");
+    }public void EndingSad()
+    {
+        SwitchScene("EndingSad");
     }
     
 }
