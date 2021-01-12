@@ -8,6 +8,7 @@ public abstract class Damagable : MonoBehaviour
     protected Rigidbody2D body;
     protected SpriteRenderer sprite;
     protected Color entitycolor;
+    protected float deathTime = 0.1f;
 
     protected virtual void Start()
     {
@@ -34,7 +35,7 @@ public abstract class Damagable : MonoBehaviour
 
     protected virtual void Death()
     {
-        Destroy(gameObject,0.1f);
+        Destroy(gameObject,deathTime);
     }
 
     IEnumerator DamageFlash()

@@ -160,7 +160,7 @@ public class Player : Character
     }
     protected new void Jump()
     {
-        if (jumpsRemaining > 0)
+        if (jumpsRemaining > 0 && Time.time > lastJumpTime + jumpDelay)
         {
             body.velocity = new Vector2(body.velocity.x, jumpForce);
             jumpsRemaining--;
@@ -176,6 +176,7 @@ public class Player : Character
         animate.SetBool("Shooting", false);
         canMove = move;
         lastShootTime = Time.time + 1;
+        lastJumpTime = Time.time + 0.2f;
     }
 
     protected override void Death()
@@ -187,9 +188,10 @@ public class Player : Character
 
     public void EndingBetrayal()
     {
-        Game.inst.SwitchScene("EndingBetrayal");
-    }public void EndingAllied()
+        Game.inst.EndingBetrayal();
+    }
+    public void EndingAllied()
     {
-        Game.inst.SwitchScene("EndingAllied");
+        Game.inst.EndingAllied();
     }
 }

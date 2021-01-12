@@ -33,6 +33,6 @@ public class SkeleKing : MonoBehaviour
 
     private void OnDisable()
     {
-        if (Game.inst.characterDeaths.Contains("ImpLeader")) Game.inst.EndingAnarchy();
+        if (Game.inst.characterDeaths.Contains("SkeletonKing") && Game.inst.characterDeaths.Contains("ImpLeader")) Game.inst.EndingAnarchy();
     }
 }

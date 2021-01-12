@@ -35,6 +35,7 @@ public class NPC : Character
 
     private void EnemyMove()
     {
+        if (!alive) return;
         if (state == NPCstates.Idle)
         {
             Idle();
@@ -101,6 +102,7 @@ public class NPC : Character
         Game.inst.impRep += deathRepImp;
         Game.inst.skeleRep += deathRepSkele;
         Game.inst.UpdateRep();
+        deathTime = 1;
         base.Death();
     }
 

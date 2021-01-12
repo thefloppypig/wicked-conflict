@@ -90,6 +90,12 @@ public class Game : MonoBehaviour
     public void EndingAnarchy()
     {
         SwitchScene("EndingAnarchy");
+    }public void EndingAllied()
+    {
+        SwitchScene("EndingAllied");
+    }public void EndingBetrayal()
+    {
+        SwitchScene("EndingBetrayal");
     }
     
 }
