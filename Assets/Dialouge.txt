@@ -1,6 +1,6 @@
-Jeff: Today is the day of the uprising... (Press E to continue)
-Jeff: I wonder which side will win, (Press E to continue)
-Jeff: I should go see what is happening. (Press E to continue)
+Jeff: Today is the day of the uprising...
+Jeff: I wonder which side will win,
+Jeff: I should go see what is happening.
 
 Bert: (Bert looks happy to see you!)
 

@@ -12,7 +12,7 @@ public class NPC : Character
     public int deathRepSkele;
 
     protected float lastAttack;
-    protected float attackCooldown = 0.3f;
+    protected float attackCooldown = 1.0f;
     protected bool alive = true;
     public bool isSkele;
 
@@ -57,12 +57,14 @@ public class NPC : Character
         if (player.health <= 0) state = NPCstates.Idle;
         if (Time.time > lastAttack + attackCooldown && player.canMove)
         {
+            animate.SetTrigger("Attack");
             Collider2D[] cs = Physics2D.OverlapCircleAll(transform.position, 1.3f);
             Collider2D cp = player.GetComponent<Collider2D>();
             foreach (Collider2D c in cs)
             {
                 if (c == cp)
                 {
+                    //animate.SetTrigger("Attack");
                     player.TakeDamage(1);
                     player.TakeKnockback(transform.position,2);
                     Game.inst.SoundHurt();
