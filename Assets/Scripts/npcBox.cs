@@ -20,6 +20,7 @@ public class npcBox : Prop
 
     protected override void Death()
     {
+        if (!isAlive) return;
         Game.inst.impRep += repChangeImp;
         Game.inst.skeleRep += repChangeSkele;
         Game.inst.UpdateRep();
