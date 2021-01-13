@@ -17,7 +17,7 @@ public class SkeleKing : MonoBehaviour
         CheckRep();
     }
 
-    void CheckRep()
+    public void CheckRep()
     {
         if (Game.inst.skeleRep < 15)
         {
