@@ -1,122 +1,122 @@
-Jeff: Today is the day of the uprising...
-Jeff: I wonder which side will win,
-Jeff: I should go see what is happening.
+Jeff: Today is the day of the uprising... \n\npress space to continue
+Jeff: I wonder which side will win, \n\npress space to continue
+Jeff: who should I go lend a hand? \n\npress space to continue
 
-Bert: (Bert looks happy to see you!)
+Bert: (Bert looks happy to see you!) \n\npress space to continue
 
-Imp: Nice weapon. Not many ones like that around here.
-Imp: Be careful what you shoot. If you shoot me i'll smash your face off.
-Imp: Kill the guy above us instead...
-Imp: We must overthrow those dumb skeletons!
-Imp: Join the revolution! Or perish.
+Imp: Nice weapon. Not many ones like that around here. \n\npress space to continue
+Imp: Be careful what you shoot. If you shoot me I'll smash your face off. \n\npress space to continue
+Imp: Kill the guy above us instead... \n\npress space to continue
+Imp: We must overthrow those dumb skeletons! \n\npress space to continue
+Imp: Join the revolution! We reward all our friends! \n\npress space to continue
 
-Skeleton: Stay away from the box!
-Skeleton: This box contains crucial supplies to survive!
-Skeleton: The imps are trying to destroy them...
-Skeleton: Those imps should be banished!
+Skeleton: Stay away from the box! \n\npress space to continue
+Skeleton: This box contains crucial supplies to survive! \n\npress space to continue
+Skeleton: The imps are trying to destroy them... \n\npress space to continue
+Skeleton: Those imps should be banished! \n\npress space to continue
 
-Skeleton: Those imps are threatening to destroy our buildings!
-Skeleton: You have a strong weapon, you can help us! 
-Skeleton: Please help!
+Skeleton: Those imps are threatening to destroy our buildings! \n\npress space to continue
+Skeleton: You have a strong weapon, you can help us! \n\npress space to continue 
+Skeleton: Please help! \n\npress space to continue
 
-Imp: Hey you! Guy with fancy weapon! Yes you!
-Imp: Help us take the city!
-Imp: We Imps have been neglected for too long!
+Imp: Hey you! Guy with fancy weapon! Yes you! \n\npress space to continue
+Imp: Help us take the city! \n\npress space to continue
+Imp: We Imps have been neglected for too long! \n\npress space to continue
 
-Imp: We are going to defeat those skeletons once and for all.
-Imp: Help us and we will repay you!
+Imp: We are going to defeat those skeletons once and for all. \n\npress space to continue
+Imp: Help us and we will repay you! \n\npress space to continue
 
-Imp: Nothing to see in this building.
+Imp: Nothing to see in this building. \n\npress space to continue
 
-Skeleton: Rumor says the imps have been planning something in the abandoned building.
-Skeleton: I don't think they have noticed me here yet.
+Skeleton: Rumor says the Imps have been planning something in the abandoned building. \n\npress space to continue
+Skeleton: I don't think they have noticed me here yet. \n\npress space to continue
 
-Bar Owner: You aren't here to kill us are you?
-Bar Owner: Man... owning a bar is tough these days...
+Bar Owner: You aren't here to kill us are you? \n\npress space to continue
+Bar Owner: Man... owning a bar is tough these days... \n\npress space to continue
 
-Imp: Heh heh I managed to sneak in! I'm going to make a ruckus.
-Imp: Don't you dare tell the bar owner.
+Imp: Heh heh I managed to sneak in! I'm going to make a ruckus. \n\npress space to continue
+Imp: Don't you dare tell the bar owner. \n\npress space to continue
 
-Skeleton: The atmosphere is dead, is there an important event today or something?
+Skeleton: The atmosphere is dead, is there an important event today or something? \n\npress space to continue
 
-Bar Owner: There's an Imp hiding in the back of the bar?
-Bar Owner: Thanks for telling me! I will deal with it...
-Bar Owner: I will make sure the skeletons know you helped me!
+Bar Owner: There's an Imp hiding in the back of the bar? \n\npress space to continue
+Bar Owner: Thanks for telling me! I will deal with it... \n\npress space to continue
+Bar Owner: I will make sure the skeletons know you helped me! \n\npress space to continue
 
-Bar Owner: Looks like you already killed him, thanks for helping!
-Bar Owner: The skeletons know you helped me!
-Bar Owner: I have disposed of the imp.
-Bar Owner: The skeletons know you helped me!
+Bar Owner: Looks like you already killed him, thanks for helping! \n\npress space to continue
+Bar Owner: I will make sure the skeletons know you helped me! \n\npress space to continue
+Bar Owner: I have disposed of the imp. \n\npress space to continue
+Bar Owner: I will make sure the skeletons know you helped me! \n\npress space to continue
 
-Skeleton: King's Quarters... doesn't look like a king lives here does it...
-Skeleton: After the imps came, they drained all our resources, leaving us in shambles.
-Skeleton: We skeletons used to look like you did...
+Skeleton: King's Quarters... doesn't look like a king would live here does it? \n\npress space to continue
+Skeleton: After the imps came, they drained all our resources, leaving us in shambles. \n\npress space to continue
+Skeleton: We skeletons used to look like you did... \n\npress space to continue
 
-Skeleton: At first when the imps arrived, we welcomed them with open arms.
-Skeleton: We shouldn't have trusted such wicked creatures.
+Skeleton: At first when the imps arrived, we welcomed them with open arms. \n\npress space to continue
+Skeleton: We shouldn't have trusted such wicked creatures. \n\npress space to continue
 
-Skeleton: In this fight, there can only be one winner.
-Skeleton: You need to pick a side! Go and kill those wretched imps!
+Skeleton: In this fight, there can only be one winner. \n\npress space to continue
+Skeleton: You need to pick a side! Go and kill those wretched imps! \n\npress space to continue
 
-Skeleton King: We are in a dire situation.
-Skeleton King: We need your help, please get fifteen reputation to show us you are trustworthy.
-Skeleton King: If do it I promise you will not regret it. You have the king's word.
-Skeleton King: You can gain reputation by killing Imps and helping fellow Skeletons.
-Skeleton King: The Imps are wicked! Don't let them manipulate you.
+Skeleton King: We are in a dire situation. \n\npress space to continue
+Skeleton King: We need your help, please get fifteen reputation to show us you are trustworthy. \n\npress space to continue
+Skeleton King: If do it I promise you will not regret it. You have the king's word. \n\npress space to continue
+Skeleton King: You can gain reputation by killing Imps and helping fellow Skeletons. \n\npress space to continue
+Skeleton King: The Imps are wicked! Don't let them manipulate you. \n\npress space to continue
 
-Imp: Hey! You're not supposed to be here!
-Imp: ...Unless you have come to join us?
-Imp: Talk with our leader if you are interested...
+Imp: Hey! You're not supposed to be here! \n\npress space to continue
+Imp: ...Unless you have come to join us? \n\npress space to continue
+Imp: Talk with our leader if you are interested... \n\npress space to continue
 
-Imp: I like your weapon, looks great for killing skeletons
-Imp: They are weaklings! They don't deserve to rule the city!
+Imp: I like your weapon, looks great for killing skeletons \n\npress space to continue
+Imp: They are weaklings! They don't deserve to rule the city! \n\npress space to continue
 
-Imp Leader: We are taking over the city! Mwhahahaha
-Imp Leader: Have you come to help us? If so, Get fifteen reputation to prove your worth.
-Imp Leader: To get our reputation, go and kill those lousy skeletons.
-Imp Leader: If you help us we will welcome you into our gang...
-Imp Leader: Trust me... you do not want to be on the wrong side of this fight.
+Imp Leader: We are taking over the city! Mwhahahaha \n\npress space to continue
+Imp Leader: Have you come to help us? If so, Gain fifteen reputation with us to prove your worth. \n\npress space to continue
+Imp Leader: To get our reputation, go and kill those lousy skeletons. \n\npress space to continue
+Imp Leader: If you help us we will welcome you into our gang... \n\npress space to continue
+Imp Leader: Trust me... you do not want to be on the wrong side of this fight. \n\npress space to continue
 
-Imp: We have been taking resources from the skeletons for months! And they still haven't realized! Ain't that funny!
-Imp: Just look at all these storage containers! 
-Imp: ...........................
-Imp: You are on our side right?
+Imp: We have been taking resources from the skeletons for months! And they still haven't realized! Ain't that funny! \n\npress space to continue
+Imp: Just look at all these storage containers!  \n\npress space to continue
+Imp: ........................... \n\npress space to continue
+Imp: You are on our side aren't you? \n\npress space to continue
 
-Imp Leader: Wow I must say I am impressed... 
-Imp Leader: You murdered all those skeletons for us.
-Imp Leader: However...
-Imp Leader: We no longer have a use for you.
+Imp Leader: Wow I must say I am impressed... \n\npress space to continue
+Imp Leader: You murdered all those skeletons for us. \n\npress space to continue
+Imp Leader: However... \n\npress space to continue
+Imp Leader: We no longer have a use for you. \n\npress space to continue
 
-Skeleton King: Wow! Your help has really changed the tide of the battle!
-Skeleton King: You are truly a wonderful ally, I hope we can work together in the future.
+Skeleton King: Wow! Your help has really changed the tide of the battle! \n\npress space to continue
+Skeleton King: You truly are a wonderful ally, I hope we can work together in the future. \n\npress space to continue
 
-Golden Skeleton: Have you seen an Imp made of Bronze? I have a bone to pick with him...
+Golden Skeleton: Have you seen an Imp made of Bronze? I have a bone to pick with him... \n\npress space to continue
 
-Bronze Imp: Do you happen to own a chicken named Bert? Hahahaha
-Bronze Imp: That's right. We found your pitiful excuse for a home.
-Bronze Imp: Kill the Golden skeleton if you want your chicken to live.
-Bronze Imp: And DO NOT wait for what he has to say about it. Get him.
-Bronze Imp: If you kill me now, you will never see your chicken again...
+Bronze Imp: Do you happen to own a chicken named Bert? Hahahaha \n\npress space to continue
+Bronze Imp: That's right. We found your pitiful excuse for a home. \n\npress space to continue
+Bronze Imp: Kill the Golden skeleton if you want your chicken to live. \n\npress space to continue
+Bronze Imp: And DO NOT wait for what he has to say about it. Get him. \n\npress space to continue
+Bronze Imp: If you kill me now, you will never see your chicken again... \n\npress space to continue
 
-Golden Skeleton: What?? you have seen the Bronze Imp? 
-Golden Skeleton: He is threatning you???
-Golden Skeleton: Don't worry, now I know where he is, I will go and get my revenge...
+Golden Skeleton: What?? you have seen a Bronze Imp? \n\npress space to continue
+Golden Skeleton: He is threatening you??? \n\npress space to continue
+Golden Skeleton: Don't worry, now I know where he is, I will go and get my revenge... \n\npress space to continue
 
-Bronze Imp: Good, Good... Impeccable work! The Golden Skeleton is dead!
-Bronze Imp: You should go back home and check on your chicken...
+Bronze Imp: Good, Good... Impeccable work! The Golden Skeleton is dead! \n\npress space to continue
+Bronze Imp: You should go back home and check on your chicken... \n\npress space to continue
 
-Golden Skeleton: The Bronze Imp and his friends have been vanquished.
-Golden Skeleton: I have safely returned your chicken to your home.
-Golden Skeleton: Thanks for telling me where that evil imp was hiding.
+Golden Skeleton: The Bronze Imp and his friends have been vanquished. \n\npress space to continue
+Golden Skeleton: I have safely returned your chicken to your home. \n\npress space to continue
+Golden Skeleton: Thanks for telling me where that evil imp was hiding. \n\npress space to continue
 
-Golden Skeleton: You've killed the Bronze Imp???
-Golden Skeleton: I only wish I could have killed him myself.
-Golden Skeleton: Unfortunately, there is nothing I can do about your chicken.
-Golden Skeleton: Maybe check your home to see if he has returned?
+Golden Skeleton: You've killed the Bronze Imp??? \n\npress space to continue
+Golden Skeleton: I only wish I could have killed him myself. \n\npress space to continue
+Golden Skeleton: Unfortunately, there is nothing I can do about your chicken. \n\npress space to continue
+Golden Skeleton: Maybe check your home to see if he has returned? \n\npress space to continue
 
-Jeff: I can't turn back now...
+Jeff: I can't turn back now... \n\npress space to continue
 
-Bert: (Bert isnt moving)
+Bert: (Bert isn't moving) \n\npress space to continue
 
-Bert: (Bert looks happy to see you!)
-Bert: (... Bert always is happy to see you)
+Bert: (Bert looks happy to see you!) \n\npress space to continue
+Bert: (... Bert is always happy to see you) \n\npress space to continue
