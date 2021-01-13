@@ -101,7 +101,7 @@ public class Player : Character
     {
         if (canMove)
         {
-            if (Input.GetKeyDown("space") || Input.GetKeyDown("w"))
+            if (Input.GetKeyDown("w"))
             {
                 Jump();
             }

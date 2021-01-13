@@ -12,7 +12,7 @@ public class NPC : Character
     public int deathRepSkele;
 
     protected float lastAttack;
-    protected float attackCooldown = 1f;
+    protected float attackCooldown = 0.5f;
     protected bool alive = true;
     public bool isSkele;
 
