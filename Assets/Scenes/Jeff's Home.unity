@@ -9347,6 +9347,50 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1235481619138101319, guid: 55cb9f36f7ecc6a4b89d09255e4ded5f, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1235481619138101319, guid: 55cb9f36f7ecc6a4b89d09255e4ded5f, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1235481619138101319, guid: 55cb9f36f7ecc6a4b89d09255e4ded5f, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1235481619138101319, guid: 55cb9f36f7ecc6a4b89d09255e4ded5f, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1235481619138101319, guid: 55cb9f36f7ecc6a4b89d09255e4ded5f, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1235481619138101319, guid: 55cb9f36f7ecc6a4b89d09255e4ded5f, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1235481619138101319, guid: 55cb9f36f7ecc6a4b89d09255e4ded5f, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1235481619138101319, guid: 55cb9f36f7ecc6a4b89d09255e4ded5f, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1235481619138101319, guid: 55cb9f36f7ecc6a4b89d09255e4ded5f, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1235481619138101319, guid: 55cb9f36f7ecc6a4b89d09255e4ded5f, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1235481619138101319, guid: 55cb9f36f7ecc6a4b89d09255e4ded5f, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4774288885563225188, guid: 55cb9f36f7ecc6a4b89d09255e4ded5f, type: 3}
       propertyPath: m_RootOrder
       value: 12
@@ -9394,6 +9438,14 @@ PrefabInstance:
     - target: {fileID: 4774288885563225190, guid: 55cb9f36f7ecc6a4b89d09255e4ded5f, type: 3}
       propertyPath: m_Name
       value: GameManager
+      objectReference: {fileID: 0}
+    - target: {fileID: 5617022724349661161, guid: 55cb9f36f7ecc6a4b89d09255e4ded5f, type: 3}
+      propertyPath: m_UiScaleMode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8377895693690145123, guid: 55cb9f36f7ecc6a4b89d09255e4ded5f, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 55cb9f36f7ecc6a4b89d09255e4ded5f, type: 3}
