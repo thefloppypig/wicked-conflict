@@ -5,7 +5,6 @@ using UnityEngine;
 
 public class NPC : Character
 {
-    private bool attackmade = true; //forcing the enemy npc to attack only once and once only to measure frequency
     public GameObject dialogObject;
     public int state = 0;
     public Player player;
@@ -55,7 +54,6 @@ public class NPC : Character
 
     private void Attack()
     {
-        //bool attackmade = true; //testing how many times the animation cycles in on attack
         if (player.health <= 0) state = NPCstates.Idle;
         if (Time.time > lastAttack + attackCooldown && player.canMove)
         {
@@ -66,18 +64,8 @@ public class NPC : Character
     
                 if (c == cp)
                 {
-                    if (attackmade == true)
-                    {
-                        animate.SetTrigger("Attack");
-                        animate.SetTrigger("Attack");
-                        attackmade = false;
-                    }
-                    //animate.SetTrigger("Attack");
-                    //attackmade = true;
-                    for (int i = 0; i < 5; i++)
-                    {
-                        Invoke("DoDamage", 0.25f);
-                    }
+                    animate.SetTrigger("Attack");
+                    Invoke("DoDamage", 0.3f);
                     lastAttack = Time.time + attackCooldown;
                     break;
                 }
@@ -88,7 +76,7 @@ public class NPC : Character
 
     private void DoDamage()
     {
-        player.TakeDamage(0.25f);
+        player.TakeDamage(1f);
         player.TakeKnockback(transform.position, 2);
         Game.inst.SoundHurt();
     }
