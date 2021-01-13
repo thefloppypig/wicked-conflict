@@ -12,7 +12,12 @@ public class SkeleKing : MonoBehaviour
         CheckRep();
     }
 
-    void OnCollisionEnter(Collision collision)
+    void OnTriggerEnter(Collider collision)
+    {
+        CheckRep();
+    }
+
+    private void FixedUpdate()
     {
         CheckRep();
     }
