@@ -6,6 +6,7 @@ using UnityEngine.SceneManagement;
 
 public class Player : Character
 {
+    private bool isAlive = true;
     public float reload;
     public float bulletSpeed = 14;
 
@@ -99,6 +100,7 @@ public class Player : Character
 
     void Update()
     {
+        if (!isAlive) return;
         if (canMove)
         {
             if (Input.GetKeyDown("w"))
@@ -145,6 +147,7 @@ public class Player : Character
 
     void FixedUpdate()
     {
+        if (!isAlive) canMove = false;
         if (canMove) PlayerMove();
         else Idle();
         IsGrounded();
@@ -195,6 +198,7 @@ public class Player : Character
 
     protected override void Death()
     {
+        isAlive = false;
         animate.SetTrigger("Death");
         Game.inst.PlayerDeath();
         SetPlayerMove(false);
